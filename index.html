@@ -3,228 +3,208 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="  css/bootstrap.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,200&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  <link rel="stylesheet" href="  css/bootstrap.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,200&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
 
-<!--    <style>-->
-<!--        h5 {-->
-<!--            font-family: "Times New Roman";-->
-<!--        }-->
-<!--        p{-->
-<!--            font-family: 'Roboto Flex', sans-serif;-->
-<!--            font-weight: 200;-->
-<!--        }-->
-<!--    </style>-->
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+
+        .b-example-divider {
+            height: 3rem;
+            background-color: rgba(0, 0, 0, .1);
+            border: solid rgba(0, 0, 0, .15);
+            border-width: 1px 0;
+            box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+        }
+
+        .b-example-vr {
+            flex-shrink: 0;
+            width: 1.5rem;
+            height: 100vh;
+        }
+
+        .bi {
+            vertical-align: -.125em;
+            fill: currentColor;
+        }
+
+        .nav-scroller {
+            position: relative;
+            z-index: 2;
+            height: 2.75rem;
+            overflow-y: hidden;
+        }
+
+        .nav-scroller .nav {
+            display: flex;
+            flex-wrap: nowrap;
+            padding-bottom: 1rem;
+            margin-top: -1px;
+            overflow-x: auto;
+            text-align: center;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+        }
+    </style>
+
 
 </head>
+
+
 <body>
 
-<nav class="navbar mx-4 my-3 " style="background-color: #e3f2fd; border-radius: 10px">
-    <div class="container-fluid">
-        <a class="navbar-brand btn-primary">Search for Content</a>
-        <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button type="button" class="btn btn-primary">Search</button>
-        </form>
-    </div>
-</nav>
+<main>
+    <div class="container py-4">
+        <header class="pb-3 mb-4 border-bottom">
+            <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
 
-
-<div class="row  row-cols-2 row-cols-md-3 g-5 my-5 mx-2">
-
-    <div class="col">
-        <div class="card" style="border-radius: 25px">
-            <img src="./Images/a.png" class="card-img-top" style="border-radius: 35px" alt="">
-            <div class="card-body">
-                <h5 class="card-title">#4870</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci at commodi cumque, ea facere in non odit provident quaerat quas recusandae rerum sed vero. Et excepturi exercitationem fuga hic illo ipsam, molestias neque, nihil odit, quam vero voluptas. Consectetur cupiditate deleniti dolor enim, itaque iusto temporibus voluptatem. Explicabo, quas, tenetur!</p>
-
-            </div>
-        </div>
-    </div>
-    <div class="col">
-        <div class="card" style="border-radius: 25px">
-            <img src="./Images/b.png" class="card-img-top" style="border-radius: 35px" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">#5870</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci at commodi cumque, ea facere in non odit provident quaerat quas recusandae rerum sed vero. Et excepturi exercitationem fuga hic illo ipsam, molestias neque, nihil odit, quam vero voluptas. Consectetur cupiditate deleniti dolor enim, itaque iusto temporibus voluptatem. Explicabo, quas, tenetur!</p>
-
-            </div>
-        </div>
-    </div>
-
-    <div class="col">
-        <div class="card" style="border-radius: 25px">
-            <img src="./Images/c.png" class="card-img-top" style="border-radius: 35px" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">#3870</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci at commodi cumque, ea facere in non odit provident quaerat quas recusandae rerum sed vero. Et excepturi exercitationem fuga hic illo ipsam, molestias neque, nihil odit, quam vero voluptas. Consectetur cupiditate deleniti dolor enim, itaque iusto temporibus voluptatem. Explicabo, quas, tenetur!</p>
-
-            </div>
-        </div>
-    </div>
-
-
-    <div class="col">
-        <div class="card">
-            <img src="./Images/d.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">#1870</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci at commodi cumque, ea facere in non odit provident quaerat quas recusandae rerum sed vero. Et excepturi exercitationem fuga hic illo ipsam, molestias neque, nihil odit, quam vero voluptas. Consectetur cupiditate deleniti dolor enim, itaque iusto temporibus voluptatem. Explicabo, quas, tenetur!</p>
-
-            </div>
-        </div>
-    </div>
-
-    <div class="col">
-        <div class="card">
-            <img src="./Images/e.png" class="card-img-top" alt="">
-            <div class="card-body">
-                <h5 class="card-title">#12870</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci at commodi cumque, ea facere in non odit provident quaerat quas recusandae rerum sed vero. Et excepturi exercitationem fuga hic illo ipsam, molestias neque, nihil odit, quam vero voluptas. Consectetur cupiditate deleniti dolor enim, itaque iusto temporibus voluptatem. Explicabo, quas, tenetur!</p>
-
-            </div>
-        </div>
-    </div>
-    <div class="col">
-        <div class="card">
-            <img src="./Images/f.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">#10870</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci at commodi cumque, ea facere in non odit provident quaerat quas recusandae rerum sed vero. Et excepturi exercitationem fuga hic illo ipsam, molestias neque, nihil odit, quam vero voluptas. Consectetur cupiditate deleniti dolor enim, itaque iusto temporibus voluptatem. Explicabo, quas, tenetur!</p>
-
-            </div>
-        </div>
-    </div>
-
-    <div class="col">
-        <div class="card">
-            <img src="./Images/g.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">#1870</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci at commodi cumque, ea facere in non odit provident quaerat quas recusandae rerum sed vero. Et excepturi exercitationem fuga hic illo ipsam, molestias neque, nihil odit, quam vero voluptas. Consectetur cupiditate deleniti dolor enim, itaque iusto temporibus voluptatem. Explicabo, quas, tenetur!</p>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="col">
-        <div class="card">
-            <img src="./Images/h.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">#5870</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci at commodi cumque, ea facere in non odit provident quaerat quas recusandae rerum sed vero. Et excepturi exercitationem fuga hic illo ipsam, molestias neque, nihil odit, quam vero voluptas. Consectetur cupiditate deleniti dolor enim, itaque iusto temporibus voluptatem. Explicabo, quas, tenetur!</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="col">
-        <div class="card">
-            <img src="./Images/p.png" class="card-img-top" alt="">
-            <div class="card-body">
-                <h5 class="card-title">#4870</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci at commodi cumque, ea facere in non odit provident quaerat quas recusandae rerum sed vero. Et excepturi exercitationem fuga hic illo ipsam, molestias neque, nihil odit, quam vero voluptas. Consectetur cupiditate deleniti dolor enim, itaque iusto temporibus voluptatem. Explicabo, quas, tenetur!</p>
-            </div>
-        </div>
-    </div>
-    <div class="col">
-        <div class="card">
-            <img src="./Images/a.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">#2870</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci at commodi cumque, ea facere in non odit provident quaerat quas recusandae rerum sed vero. Et excepturi exercitationem fuga hic illo ipsam, molestias neque, nihil odit, quam vero voluptas. Consectetur cupiditate deleniti dolor enim, itaque iusto temporibus voluptatem. Explicabo, quas, tenetur!</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="col">
-        <div class="card">
-            <img src="./Images/b.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">#9870</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci at commodi cumque, ea facere in non odit provident quaerat quas recusandae rerum sed vero. Et excepturi exercitationem fuga hic illo ipsam, molestias neque, nihil odit, quam vero voluptas. Consectetur cupiditate deleniti dolor enim, itaque iusto temporibus voluptatem. Explicabo, quas, tenetur!</p>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="col">
-        <div class="card">
-            <img src="./Images/e.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">#8870</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci at commodi cumque, ea facere in non odit provident quaerat quas recusandae rerum sed vero. Et excepturi exercitationem fuga hic illo ipsam, molestias neque, nihil odit, quam vero voluptas. Consectetur cupiditate deleniti dolor enim, itaque iusto temporibus voluptatem. Explicabo, quas, tenetur!</p>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<!-- Footer -->
-<footer class="text-center text-lg-start bg-light text-muted">
-    <!-- Section: Social media -->
-    <section
-            class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
-    >
-        <!-- Left -->
-        <div class="me-5 d-none d-lg-block">
-            <span>Get connected with us on social networks:</span>
-        </div>
-        <!-- Left -->
-
-        <!-- Right -->
-        <div>
-            <a href="" class="me-4 text-reset">
-                <i class="fab fa-facebook-f"></i>
+                <span class="fs-4">NFTSHOW</span>
             </a>
-            <a href="" class="me-4 text-reset">
-                <i class="fab fa-twitter"></i>
-            </a>
-            <a href="" class="me-4 text-reset">
-                <i class="fab fa-google"></i>
-            </a>
-            <a href="" class="me-4 text-reset">
-                <i class="fab fa-instagram"></i>
-            </a>
-            <a href="" class="me-4 text-reset">
-                <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="" class="me-4 text-reset">
-                <i class="fab fa-github"></i>
-            </a>
+        </header>
+
+        <div class="p-5 mb-2 bg-light rounded-3 mb-5">
+            <div class="container-fluid py-5 shadow p-3 mb-5 bg-body rounded ">
+                <h1 class="display-5 fw-bold">Discover, collect, and sell <br> extraordinary NFTs</h1>
+                <p class="col-md-8 fs-4">OpenSea is the world's first and <br> largest NFT marketplace</p>
+                <a  class="btn btn-primary btn-lg" href="showNft.html">Explore</a>
+<!--                <button class="btn btn-primary btn-lg" type="button" href="showNft.html">Explore</button>-->
+                <button type="button" class="btn btn-lg btn-outline-secondary">Create</button>
+            </div>
         </div>
-        <!-- Right -->
-    </section>
-    <!-- Section: Social media -->
 
-    <!-- Section: Links  -->
-    <section class="">
-        <div class="container text-center text-md-start mt-5">
-            <!-- Grid row -->
-            <div class="row mt-3">
-                <!-- Grid column -->
-                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                    <!-- Content -->
-                    <h6 class="text-uppercase fw-bold mb-4">
-                        <i class="fas fa-gem me-3"></i>Company name
-                    </h6>
-
+        <div class="row row-cols-1 row-cols-md-3 g-3">
+            <div class="col">
+                <div class="card shadow p-3 mb-5 bg-body rounded">
+                    <img src="./Images/wallet.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">How to Find an NFT You Love</h5>
+                    </div>
                 </div>
-
             </div>
-            <!-- Grid row -->
+            <div class="col">
+                <div class="card shadow p-3 mb-5 bg-body rounded">
+                    <img src="./Images/righr.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Easily Setup a MetaMask Wallet</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow p-3 mb-5 bg-body rounded">
+                    <img src="./Images/left.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Fund MetaMask with ETH</h5>
+                    </div>
+                </div>
+            </div>
+
         </div>
-    </section>
-    <!-- Section: Links  -->
 
-    <!-- Copyright -->
 
-    <!-- Copyright -->
-</footer>
-<!-- Footer -->
+        <h3 class="text-center fw-bold mb-5">Browse by category</h3>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card h-60">
+                    <img src="./Images/pl.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-center fw-bold">Art</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-60">
+                    <img src="./Images/ml.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-center fw-bold">Collectible</h5>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-60">
+                    <img src="./Images/la.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-center fw-bold">Domain Names</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-60">
+                    <img src="./Images/sports.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-center fw-bold">Music</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-60">
+                    <img src="./Images/collectiable.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-center fw-bold">Photography</h5>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-60">
+                    <img src="./Images/utility.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-center fw-bold">Sports</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-60">
+                    <img src="./Images/ta.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-center fw-bold">Trading Cards</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-60">
+                    <img src="./Images/virtual%20world.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-center fw-bold">Utility</h5>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-60">
+                    <img src="./Images/sports.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-center fw-bold">Virtual world</h5>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <footer class="pt-3 mt-4 text-muted border-top">
+            &copy; 2022
+        </footer>
+    </div>
+</main>
+
+
+
+
 <script src="js/bootstrap.bundle.js"></script>
 </body>
 </html>
